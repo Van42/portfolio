@@ -4,6 +4,7 @@
 <head>
   <title>Portfolio</title>
   <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 
@@ -11,12 +12,12 @@
 
   <header>
     <nav>
+      <li id="logo"><span>V</span>anessa <span>D</span>urand</li>
       <ul>
-        <li id="logo"><span>V</span>anessa <span>D</span>urand</li>
-        <li><a href="#code">Présentation</a></li>
-        <li><a href="#competence">Learning</a></li>
-        <li><a href="#progress">Projets</a></li>
-        <li><a href="#contact">Contact</a>
+        <li><a href="#code" class="item">Présentation</a></li>
+        <li><a href="#competence" class="item">Learning</a></li>
+        <li><a href="#progress" class="item">Projets</a></li>
+        <li><a href="#contact" class="item" >Contact</a>
         <li>
       </ul>
     </nav>
@@ -24,21 +25,26 @@
 
   <div class="bandeau">
     <div class="intro">
-      <h1><span>Bonjour,</span><br>En formation développement web et web mobile sur St-Etienne</h1>
+      <h1>Bonjour, en formation développement web et web mobile sur St-Etienne</h1>
       <h2>Je recherche un<span> stage </span>pour la période du 02 novembre 2021 au 11 janvier 2022</h2>
     </div>
     <div class="button">
         <a href="./images/VanessaDurand_CV.pdf" class="btncv" target="_blank">Mon CV</a>
     </div>
   </div>
+  
   <div class="code" id="code">
     <img src="./images/avataaars.png">
     <h2>Le code et moi</h2>
     <p>
-      Ma curiosité m'a menée à me former dans diverses domaines, et c'est ce que j'apprécie dans le développement, la
+      Ma curiosité m'a mené à me former dans divers domaines, et c'est ce que j'apprécie dans le développement, la
       possibilité d'évoluer par soi même.
-      Mes competences sont variée et en complète évolution!
+      Mes competences sont variées, complémentaires et en complète évolution!
     </p>
+  </div>
+
+  <div class="separateLine">
+    <img src="./images/separateCarre.png">
   </div>
 
   <div class="competence" id="competence">
@@ -64,28 +70,44 @@
       </div>
     </div>
   </div>
-<div class="progress" id="progress">
+
+  <div class="separateLine">
+    <img src="./images/separateCarre.png">
+  </div>
+  
+<div class="progress">
       <h2>Work in progress</h2>
-  <div class="cardSide">
+  <div class="cardSide" id="progress">
     <div class="card">
-    <img src="./images/85047559-fond-d-écran-numérique-bleu-abstrait-technologie-concept-de-l-espace-rendu-3d.jpg">
+    <img src="./images/maqAnim.png">
       <div class="textuel">
       <h3>Maquettage</h3>
         <p>Voici ma 1ere maquette, c'est le sujet du business case pour l'examen final</p>
-        <a href="./images/VanessaDurand_CV.pdf" class="btn" target="_blank">En savoir plus</a>
+        <a href="https://www.figma.com/proto/eN8fwkg1eWmpvZ2n01o6Lo/businesscase-Vanessa-Durand?node-id=1%3A2&scaling=scale-down-width" class="btn" target="_blank">En savoir plus</a>
       </div>
     </div>
     <div class="card">
-    <img src="./images/Couleur-du-calmar-luciole.jpg">
+    <img src="./images/Capture d’écran 2021-07-23 191909.png">
       <div class="textuel">
       <h3>Projets</h3>
-        <p>Quelques projets, réalisés principalement sur codepen .</p>
-        <a href="./images/VanessaDurand_CV.pdf" class="btn" target="_blank">En savoir plus</a>
+        <p>Projet de site pour l'association dont je suis l'une des fondatrices</p>
+        <a href="#" class="btn" target="_blank">En construction!</a>
       </div>
     </div>
   </div>  
 </div>
+
+<div class="separateFooter">
+  <div class="sep">
+    <img src="./images/sepFooter.png">
+  </div>
+  <div class="sep">
+    <img src="./images/sepFooter.png">
+  </div>
+</div>
+
   <footer>
+
     <div class="contact" id="contact">
       <h1>Vanessa Durand</h1>
       <h3>9 rue de Beauregard</h3>
@@ -98,7 +120,27 @@
       </h3>
     </div>
 
-    <form>
+    <div class="iconSocial">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/feed/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://codepen.io/your-work" target="_blank">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Van42" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <form action="#">
 
     <label for="nom">Nom</label>
         <input type="text" name="nom" id="nom" />
@@ -107,14 +149,18 @@
     <label for="email">E-mail</label>
         <input type="email" name="email" id="email" />
     <textarea name="corps_de_texte" rows="8" cols="32">
-              Votre message ici:
-         </textarea></div>
-    <div><button>Envoyer</button></div>
-
+    Votre message ici:
+    </textarea>
+    <input type="submit" class="button" value="envoyer">
+    
     </form>
+    
   </footer>
 
-
+<div id="copyright">
+      <p>&copy; Vanessa Durand 2021</p>
+    </div>
+    
 </body>
 
 </html>
