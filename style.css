@@ -19,6 +19,7 @@ body {
     margin: 0;
     text-align: center;
     color:#d3a480e7;
+    overflow-x:hidden;
 }
 /*titres*/
 
@@ -114,7 +115,7 @@ header li a {
     color:#d3a48088;;
     font-weight: bold;
     text-align: center;
-    padding: 10px;
+    padding: 10px 30px;
     
 }
 
@@ -225,12 +226,13 @@ header li a {
 .bandeau .button{
 
     display: inline-block;
-    margin-top: 90px;
+    margin-top: 70px;
     padding: 1rem 2rem;
     font-size: 20px;
     background-color:rgb(147, 142, 72);
     border-radius: 20px;
     transition: .5s;
+    cursor: pointer;
     
 }
 .button a{
@@ -301,6 +303,7 @@ header li a {
     bottom:0;
     border-radius: 30px 0 30px 0 ;
     transform: translate(-30%,70%);
+    filter: drop-shadow(2px 4px 8px #585858);
 }
 .code p{
     color:rgb(177, 174, 136);
@@ -331,7 +334,7 @@ header li a {
     background-repeat: no-repeat;
     padding: 30px;
     margin: 30px;
-    height: 100px;
+    height: 200px;
     width: 400px;
     border-radius: 50% 20% / 10% 40%;
     box-shadow: 15px 15px 30px #070f30,
@@ -344,7 +347,7 @@ header li a {
     background-repeat: no-repeat;
     padding: 30px;
     margin: 30px;
-    height: 100px;
+    height: 200px;
     width: 400px;
     border-radius: 50% 20% / 10% 40%;
     box-shadow: 15px 15px 30px #070f30,
@@ -357,7 +360,7 @@ header li a {
     background-repeat: no-repeat;
     padding: 30px;
     margin: 30px;
-    height: 100px;
+    height: 200px;
     width: 400px;
     border-radius: 50% 20% / 10% 40%;
     box-shadow: 15px 15px 30px #070f30,
@@ -370,7 +373,7 @@ header li a {
     background-repeat: no-repeat;
     padding: 30px;
     margin: 30px;
-    height: 100px;
+    height: 200px;
     width: 400px;
     border-radius: 50% 20% / 10% 40%;
     box-shadow: 15px 15px 30px #070f30,
@@ -382,7 +385,7 @@ header li a {
     background-size: 65%;
     padding: 30px;
     margin: 30px;
-    height: 100px;
+    height: 200px;
     width: 400px;
     border-radius: 50% 20% / 10% 40%;
     box-shadow: 15px 15px 30px #070f30,
@@ -395,7 +398,7 @@ header li a {
     background-size: 80%;
     padding: 30px;
     margin: 30px;
-    height: 100px;
+    height: 200px;
     width: 400px;
     border-radius: 50% 20% / 10% 40%;
     box-shadow: 15px 15px 30px #070f30,
@@ -500,7 +503,7 @@ header li a {
 .textuel{
     width: 100%;
     height: 100%;
-    padding-top: 80px;
+    padding-top: 5px;
     z-index: 3;
     color:rgb(233, 225, 114);
     opacity: 0;
@@ -525,13 +528,11 @@ header li a {
     letter-spacing: 1px;
     font-size:20px;
     margin-top:15px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .btn{
-        padding: 0.5rem 1rem;
-        margin-top: 95px;
-        margin-bottom:30px;
+        padding: 0.5rem 0.5rem;
         font-size: 20px;
         background-color:rgb(147, 142, 72);
         border-radius: 10px;
@@ -777,7 +778,7 @@ button:hover {
 }
 
 @media screen and (min-width:280px) and (max-width:1118px) {
-
+    
     .intro{
         margin-bottom: 20px;
     }
@@ -818,7 +819,7 @@ button:hover {
     .iconSocial{
         display: inline-block;
         margin-left: 650px;
-        margin-top: 70px;
+        margin-top: 100px;
         padding-bottom: 30px;
 
     }
